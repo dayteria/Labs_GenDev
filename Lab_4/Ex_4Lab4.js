@@ -25,7 +25,7 @@ function sum2(...args2) {     // Створення функції sum2; ...args
   if (args2.length === 0) return 0;     // Якщо args2.length = 0 (масив порожній / функції не передали аргументи), одразу повертаємо 0
   let result2 = 0;
   do {
-    result2 += args2.pop();     // Виймаємо останній елемент масиву args2 за допомогою args2.pop() (при цьому масив стає коротшим на 1) і додаємо його до result2
+    result2 += args2.pop();     // Виймаємо останній елемент масиву args2 за допомогою args2.pop() і додаємо його до result2
   } while (args2.length > 0);     // Перевіряємо умову args2.length > 0: якщо true — виконуємо тіло циклу знову, якщо false — повертаємо result1 та завершуємо цикл
   return result2;
 };
