@@ -5,7 +5,7 @@ function iterate(obj, callback) {   // Оголошення функції itera
   
   for (const key of keys) {   // Перебираємо кожен ключ
     const value = obj[key];   // Отримуємо значення value за поточним ключем key
-    callback(key, value);   // Викликаємо колбек, передаючи ключ, значення та сам об'єкт
+    callback(key, value);   // Викликаємо callback, передаючи ключ та значення
   }
 };
 
